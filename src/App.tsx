@@ -5,6 +5,7 @@ import { useAtom } from "jotai";
 import { Marker, MarkerData } from "./components/Marker";
 import { Map } from "./components/Map";
 import { mapAtom } from "./state/GlobalAtoms";
+import { Input, Button } from "antd";
 
 export const App = () => {
   const [map] = useAtom(mapAtom);
@@ -53,14 +54,13 @@ export const App = () => {
     <Wrapper apiKey={import.meta.env.VITE_GOOGLE_MAPS_KEY}>
       <FullPage>
         <Flex>
-          <input
-            type="text"
+          <Input
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && googleSearch()}
             css={{ width: 200 }}
             value={query}
           />
-          <button onClick={googleSearch}>Search</button>
+          <Button onClick={googleSearch}>Search</Button>
         </Flex>
         <Map center={{ lat: firstMarker.lat, lng: firstMarker.lng }} zoom={11}>
           {places?.map((place) => (
@@ -91,4 +91,5 @@ const Flex = styled.div`
   flex-direction: row;
   align-items: center;
   padding: 8px;
+  gap: 12px;
 `;

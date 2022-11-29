@@ -4,7 +4,7 @@
 
 ```env
 VITE_GOOGLE_MAPS_KEY=<YOUR API KEY>
-VITE_APP_TITLE=Food Project
+VITE_APP_TITLE=Food Project (or whatever :)
 ```
 
 ## Install pnpm (npm alternative)
@@ -35,3 +35,4 @@ now you can open your browser on http://localhost:5173/ and start hacking ;)
 - boilerplate: https://vitejs.dev/
 - state management: https://jotai.org/
 - css-in-js https://emotion.sh/
+- components library: https://ant.design/
