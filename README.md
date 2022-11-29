@@ -1,6 +1,6 @@
 # How to run this
 
-## Create an environment file ".env.local" in project root with following content:
+## Create an environment file `.env.local` in project root with following content:
 
 ```env
 VITE_GOOGLE_MAPS_KEY=<YOUR API KEY>
