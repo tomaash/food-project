@@ -1,5 +1,12 @@
 # How to run this
 
+## Create an environment file ".env.local" in project root with following content:
+
+```env
+VITE_GOOGLE_MAPS_KEY=<YOUR API KEY>
+VITE_APP_TITLE=Food Project
+```
+
 ## Install pnpm (npm alternative)
 
 ```shell
