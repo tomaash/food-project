@@ -24,6 +24,7 @@ now you can open your browser on http://localhost:5173/ and start hacking ;)
 
 ## Notable used libraries
 
+- package manager: https://pnpm.io/
 - boilerplate: https://vitejs.dev/
 - state management: https://jotai.org/
 - css-in-js https://emotion.sh/
